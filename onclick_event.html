@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .show {
+        width: 400px;
+        height: 300px;
+        background-color: red;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <img onclick="fun()" src="./style1.png" alt="" width="50px" />
+      <div class="show" id="show"></div>
+    </center>
+
+    <script>
+      function fun() {
+        let show = document.getElementById("show");
+        if (show.style.display == "block") {
+          show.style.display = "none";
+        } else {
+          show.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
